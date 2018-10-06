@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<change xmlns="https://www.rbschange.fr/static/schema/change-project/1.0"
+<change xmlns="http://www.rbs.fr/schema/change-project/1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="https://www.rbschange.fr/static/schema/change-project/1.0.xsd https://update.rbschange.fr/static/schema/change-project/1.0.xsd">
   <name>cmsecomos</name>
