@@ -260,6 +260,9 @@ div.cmdresult {
 	max-height: 25em;
 	overflow: auto;
 	cursor: wait;
+	font-family: monospace;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
 span.row_std {
