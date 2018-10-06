@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change xmlns="https://www.rbschange.fr/static/schema/change-project/1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.rbschange.fr/static/schema/change-project/1.0.xsd https://update.rbschange.fr/static/schema/change-project/1.0.xsd">
+  <name>cmsecomos</name>
+  <type>change-project</type>
+  <version>3.6.9</version>
+  <description>Open Source CMS e-Commerce</description>
+  <dependencies>
+    <framework>3.7.0</framework>
+    <modules>
+      <!-- e-Commerce modules -->
+      <module>catalog-3.6.10</module>
+      <module>order-3.6.9</module>
+      <module>customer-3.6.9</module>
+      <module>brand-3.6.9</module>
+      <module>shipping-3.6.9</module>
+      <module>payment-3.6.9</module>
+      <module>productupdater-3.6.9</module>
+      <module>paybox-3.6.9</module>
+      <module>shoppingmail-3.6.9</module>
+      <module>mondialrelay-3.6.9</module>
+      <module>kiala-3.6.9</module>
+      <module>icirelais-3.6.9</module>
+      <module>relaiscolis-3.6.9</module>
+
+      <!-- Open Source modules -->
+      <module>website-3.6.10</module>
+      <module>event-3.6.9</module>
+      <module>bookmarks-3.6.9</module>
+      <module>blog-3.6.9</module>
+      <module>comment-3.6.9</module>
+      <module>inquiry-3.6.9</module>
+      <module>download-3.6.9</module>
+      <module>faq-3.6.9</module>
+      <module>forums-3.6.9</module>
+      <module>photoalbum-3.6.9</module>
+      <module>markergmaps-3.6.9</module>
+      <module>mapping-3.6.9</module>
+      <module>polls-3.6.9</module>
+      <module>twitterconnect-3.6.9</module>
+      <module>lexicon-3.6.9</module>
+      <module>privatemessaging-3.6.9</module>
+      <module>joboffer-3.6.9</module>
+      <module>sharethis-3.6.9</module>
+      <module>videos-3.6.9</module>
+      <module>statictext-3.6.9</module>
+      <module>projectcare-3.6.9</module>
+      <module>gmaps-3.6.9</module>
+      <module>mysqlnotif-3.6.9</module>
+      <module>sample-3.6.10</module>
+      <module>richtext-3.6.9</module>
+    </modules>
+  </dependencies>
+</change>

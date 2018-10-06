@@ -1,0 +1,21 @@
+version: '3'
+services:
+  rbschange:
+    image: rbschange/php:7
+    ports:
+    - "53080:8080"
+    volumes:
+    - .:/var/www/rbschange:cached
+  solr:
+    image: rbschange/solr:1.4
+  mysql:
+    image: mysql:5.5
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'true'
+      MYSQL_USER: rbschange
+      MYSQL_PASSWORD: rbsch@nge
+      MYSQL_DATABASE: rbschange
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+    - "53580:1080"

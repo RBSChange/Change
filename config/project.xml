@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <defines>
+    <define name="AG_WEBAPP_NAME">Default Project</define>
+
+    <define name="AG_SUPPORTED_LANGUAGES">fr en</define>
+    <define name="AG_UI_SUPPORTED_LANGUAGES">fr en</define>
+
+    <define name="AG_LOGGING_LEVEL">WARN</define>
+
+    <define name="CHANGE_USE_WORKFLOW">false</define>
+
+    <define name="AG_DISABLE_BLOCK_CACHE">false</define>
+    <define name="AG_DISABLE_SIMPLECACHE">false</define>
+
+    <define name="CHANGECRON_EXECUTION">console</define>
+  </defines>
+
+  <config>
+    <databases>
+      <connections>
+        <entry name="default">webapp</entry>
+      </connections>
+    </databases>
+
+    <modules>
+      <media>
+        <secureMediaStrategyClass>
+          <entry name="default">media_DisplaySecuremediaDefaultStrategy</entry>
+        </secureMediaStrategyClass>
+      </media>
+    </modules>
+
+    <!-- Web browsers compatibility (legacy) -->
+    <browsers>
+      <frontoffice>
+        <browser name="ie">
+          <version name="1">8.0</version>
+          <version name="2">9.0</version>
+        </browser>
+        <browser name="firefox">
+          <version name="1">12.0</version>
+        </browser>
+      </frontoffice>
+    </browsers>
+  </config>
+</project>

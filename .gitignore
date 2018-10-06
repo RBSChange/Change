@@ -1,1 +1,10 @@
 .idea
+
+# Project files, remove when deploying new project
+build
+cache
+framework
+log
+modules/*
+repository/*
+themes/*
