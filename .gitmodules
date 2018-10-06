@@ -1,0 +1,12 @@
+[submodule "themes.default"]
+	path = themes/default
+	url = https://github.com/RBSChange/themes.default
+	branch = 3.6
+[submodule "themes.developer"]
+	path = themes/developer
+	url = https://github.com/RBSChange/themes.developer
+	branch = 3.6
+[submodule "framework"]
+	path = repository/framework/framework-3.7.0
+	url = https://github.com/RBSChange/framework
+	branch = 3.7
