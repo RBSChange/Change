@@ -1,4 +1,4 @@
-# RBS Change
+# RBS Change 3.7 Beta
 
 ## Running
 
@@ -11,3 +11,4 @@ docker-compose up -d
 ```
 
 Open http://localhost:53080 and follow installer, then remove `install` directory.
+
