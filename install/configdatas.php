@@ -1,8 +1,8 @@
 <?php
-	$dataconfig = array (
+$dataconfig = array (
   'DEFAULT_LANG' => 'fr',
   'OTHER_LANG1' => 'fr',
-  'FQDN' => 'change37.docker',
+  'FQDN' => 'localhost:53080',
   'WWW_GROUP' => 'www-data',
   'TMP_PATH' => '/tmp',
   'KEY' => 'OS',
@@ -12,7 +12,7 @@
   'DB_PASSWORD' => 'rbsch@nge',
   'DB_DATABASE' => 'rbschange',
   'SERVER_MAIL' => 'SMTP',
-  'NO_REPLY' => 'noreply@change37.docker',
+  'NO_REPLY' => 'noreply@localhost.com',
   'SENDMAIL_PATH' => '/usr/sbin/sendmail',
   'SENDMAIL_ARGS' => '-t -i',
   'SMTP_HOST' => 'mailcatcher',
@@ -21,6 +21,6 @@
   'SAMPLES' => 'checked',
   'WEBEDIT_HOME' => '/var/www/rbschange',
   'USEHTTPS' => false,
-  'BASEURL' => 'http://change37.docker',
-  'checked' => true,
+  'BASEURL' => 'http://localhost:53080',
+  'checked' => false,
 );

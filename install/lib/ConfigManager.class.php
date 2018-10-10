@@ -152,9 +152,12 @@ class ConfigManager
 	public function initialise()
 	{
 		$this->parameters['FQDN'] = $_SERVER['SERVER_NAME'];
+		if (!in_array($_SERVER['SERVER_PORT'], [80, 443])) {
+			$this->parameters['FQDN'] .= ':'.$_SERVER['SERVER_PORT'];
+		}
 		$this->parameters['USEHTTPS'] = isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off";
 		$this->parameters['BASEURL'] = 'http' . (($this->parameters['USEHTTPS']) ? "s" : "") . '://' . $this->parameters['FQDN'];
-		
+
 		if (function_exists('posix_getgrgid'))
 		{
 			$grpInfos = posix_getgrgid(posix_getegid());
@@ -178,7 +181,8 @@ class ConfigManager
 		$this->parameters['DB_DATABASE'] = 'rbschange';
 		
 		$this->parameters['SERVER_MAIL'] = 'SMTP';
-		$this->parameters['NO_REPLY'] = 'noreply@' . str_replace('www.', '', $this->parameters['FQDN']);
+		$mailDomain = preg_replace('/^(www.)?(.*?)(:[0-9]+)?$/i', '$2', $this->parameters['FQDN']);
+		$this->parameters['NO_REPLY'] = 'noreply@' . $mailDomain;
 		$this->parameters['SMTP_HOST'] = 'mailcatcher';
 		$this->parameters['SMTP_PORT'] = '1025';
 		
