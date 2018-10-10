@@ -3,8 +3,10 @@
 # Project files, remove when deploying new project
 build
 cache
-framework
 log
 modules/*
 repository/*
+!repository/framework
 themes/*
+!themes/default
+!themes/developer
